@@ -1,19 +1,18 @@
 /* Fonts and colors */
 body {
-  color: #494949;
+  color: #333;
   font-size: 18px;
   line-height: 1.6;
-  font-weight: lighter;
   font-family: 'Lora', serif;
   margin: 0;
+  padding: 0;
 }
 h1, h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 h2 {
-  color: #A0A0A0;
-  font-weight: normal;
+  color: #555;
 }
 a {
   text-decoration: none;
@@ -22,57 +21,47 @@ a {
 
 /* Custom design */
 .banner {
-  background-image: url("https://loremflickr.com/1000/500");
+  background-image: url("https://lilluna.com/wp-content/uploads/2018/01/chocolate-cake-2.jpg");
   background-size: cover;
   color: white;
-  padding: 120px 0;
+  padding: 100px 0;
+  text-align: center;
 }
 .banner h1 {
-  font-size: 38px;
+  font-size: 36px;
 }
 .banner p {
-  font-size: 30px;
+  font-size: 24px;
   font-style: italic;
-  font-weight: lighter;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .container {
-  width: 700px;
-  margin: 50px auto;
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
-.link-medium {
-  background-image: linear-gradient(to bottom, rgba(233, 253, 240, 1), rgba(233, 253, 240, 1));
-  color: #636363;
-  font-weight: lighter;
-  font-size: 25px;
-  font-style: italic;
+.container img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
 }
-.link-medium:hover {
-  background-image: linear-gradient(to bottom, rgba(125, 255, 179, 1), rgba(125, 255, 179, 1));}
-
 
 /* Media queries */
-@media(max-width: 900px) {
+@media (max-width: 900px) {
   .container {
-    width: 700px;
+      width: 90%;
   }
 }
-@media(max-width: 750px) {
-  .container {
-    width: 450px;
-  }
-}
-@media(max-width: 500px) {
-  .container {
-    width: 350px;
-  }
+@media (max-width: 600px) {
   .banner {
-    padding: 50px 0;
+      padding: 60px 0;
   }
   .banner h1 {
-    font-size: 30px;
+      font-size: 28px;
   }
   .banner p {
-    font-size: 20px;
+      font-size: 18px;
   }
 }
